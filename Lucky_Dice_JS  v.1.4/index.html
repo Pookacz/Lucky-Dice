@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="dice.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Symulator rzucania Kostką!</h1>
+        <!--<p id="diceResult"></p>--> 
+        <div id="diceSVG">
+
+            <img src="svg/dice_1.svg"/>
+        </div>
+        <button type="button" onclick="diceThrow()" id="throwButton">Rzuć kostką!</button>
+
+    </div>
+    
+    <div id="scoreBoard">
+        <div id="firstPlayer">
+            <p id="fpName">Gracz 1</p>
+            <p>Liczba rzutów:</p>
+            <p id="fpCounter">0</p>
+            <p>Wynik:</p>
+            <p id="fpScore">0</p>
+        </div>
+
+        <div id="secondPlayer">
+            <p id="spName">Gracz 2</p>
+            <p>Liczba rzutów:</p>
+            <p id="spCounter">0</p>
+            <p>Wynik:</p>
+            <p id="spScore">0</p>
+        </div>
+    <div id="add">
+        <button type="button" onclick="addPlayers()" id="addPlayers">Dodaj Graczy!</button>
+
+    </div>
+
+    </div>
+    
+    
+    
+    <div id="gameVersion">
+        <p>Made by Pooki &#174 version 1.4</p>
+    </div>
+
+</body>
+</html>
